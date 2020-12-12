@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.isabella.FirebaseDemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MessageSender">
+        <activity android:name="com.isabella.FirebaseDemo.MainActivity"></activity>
+        <activity android:name="com.isabella.FirebaseDemo.LoginActivity" />
+        <activity android:name="com.isabella.FirebaseDemo.RegisterActivity" />
+        <activity
+            android:name="com.isabella.FirebaseDemo.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MessageSender.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

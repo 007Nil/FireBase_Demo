@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1048298061771",
+    "project_id": "message-sender-f618e",
+    "storage_bucket": "message-sender-f618e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048298061771:android:9cd79e2746adee2029c04e",
+        "android_client_info": {
+          "package_name": "com.isabella.messagesender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048298061771-465jocr5o6m99kfpdiphsojgl2aa8e2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEJkzNalleh-4uPKll_lB0kguv78ZRks0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048298061771-465jocr5o6m99kfpdiphsojgl2aa8e2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
