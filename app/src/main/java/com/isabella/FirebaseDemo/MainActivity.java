@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -19,6 +20,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.isabella.FirebaseDemo.Model.Message;
 
 import java.util.ArrayList;
 
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private Button sendMessage;
     private EditText message;
     private ListView listView;
+
+    private Message message_info = new Message();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 for (DataSnapshot each: snapshot.getChildren()){
                     messageList.add(each.getValue().toString().replace("{", "").replace("Message=", "")
                     .replace("}",""));
+//                    message_info = each.getValue(Message.class);
+//                    String txt_message_info = message_info.getMessage();
+//                    System.out.println(txt_message_info);
+//                    messageList.add(txt_message_info);
+
                 }
                 adopter.notifyDataSetChanged();
             }
